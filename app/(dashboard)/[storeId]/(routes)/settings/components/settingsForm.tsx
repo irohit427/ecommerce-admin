@@ -70,6 +70,8 @@ const SettingsForm:React.FC<SettingsFormProps> = ({ initialData }) => {
   return (
     <>
       <AlertModal 
+        title='Are you sure you want to delete the store?'
+        description="Make sure you removed all the products and categories first. This action cannot be undone."
         isOpen={open}
         onClose={() => setOpen(false)}
         onConfirm={onDelete}
